@@ -32,7 +32,7 @@ export const validateSudoku = (newGrid, grid) => {
 
 const isValid = (grid, row, col, num) => {
   if (num === "") return [true, "valid input"];
-  
+
   // Column check
   for (let i = 0; i < 9; i++) {
     if (grid[i][col] === num) {
@@ -57,7 +57,7 @@ const isValid = (grid, row, col, num) => {
       }
     }
   }
-  
+
   return [true, "valid input"];
 };
 
@@ -93,22 +93,3 @@ export const solveGrid = (newGrid, grid, row, col) => {
   }
   return false;
 };
-
-// // Example grid
-// const grid = [
-//   ["1", "", "", "", "", "", "", "", ""],
-//   ["", "", "", "", "", "", "", "", ""],
-//   ["", "", "", "", "", "", "", "", ""],
-//   ["", "", "", "2", "", "", "", "", ""],
-//   ["", "", "", "", "", "", "", "", ""],
-//   ["", "", "", "", "", "", "", "", ""],
-//   ["", "", "", "", "", "", "", "", ""],
-//   ["", "", "", "", "", "", "", "", ""],
-//   ["", "", "", "", "", "", "", "3", ""],
-// ];
-
-// const result = validateSudoku(newGrid, grid);
-// console.log(result);
-// console.log(newGrid);
-
-
