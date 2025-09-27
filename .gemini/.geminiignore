@@ -1,0 +1,19 @@
+# Files to ignore during Gemini processing
+*.sql
+*.db
+*.sqlite
+*.log
+*.tmp
+*.temp
+node_modules/
+.git/
+.env
+.env.*
+dist/
+build/
+coverage/
+*.min.js
+*.bundle.js
+package-lock.json
+yarn.lock
+*.d.ts
